@@ -32,11 +32,24 @@ def email_bombing_attack(to_email, from_email, app_password, subject, body, num_
     server.quit()
 
 # Example usage:
-to_email = "0.alreadyhacked.0@gmail.com"  # Target email address to send the emails to
-from_email = "sagarbiswas.sb0@gmail.com"  # Sender's email address
-app_password = "epnw mlkz kjui izxg"  # Application-specific password for the sender's Gmail account
-subject = "Urgent: Your cat is cute!"  # Subject line of the email
-body = "Dear human, your cat is indeed adorable. Keep being cat-tastic!"  # Body content of the email
+to_email = "target@example.com"  # Target email address to send the emails to
+from_email = "your-email@gmail.com"  # Sender's email address
+app_password = "your-app-password"  # Application-specific password for the sender's Gmail account
+subject = "Important Notification: Verify Your Account Now"  # Subject line of the email
+# Body content of the email (HTML format)
+body = """
+<html>
+<body>
+    <h1 style="color: #2d89ef;">Verify Your Account</h1>
+    <p>Dear User,</p>
+    <p>We noticed suspicious activity in your account and need you to verify your account details to ensure continued access. 
+    Please click the link below to confirm your account:</p>
+    <p><a href="https://example.com/verify-account" style="color: #1d70b8; text-decoration: none;">Verify My Account</a></p>
+    <p>If you did not initiate this request, please contact our support team immediately.</p>
+    <p>Thank you,<br>Your Security Team</p>
+</body>
+</html>
+"""
 num_emails = 100  # Number of emails to send
 
 # Call the function to start sending emails
