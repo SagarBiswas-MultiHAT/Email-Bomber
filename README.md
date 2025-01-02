@@ -16,8 +16,8 @@ This Python script automates sending multiple emails to a specified recipient us
 ## Installation  
 1. Clone this repository:  
    ```bash  
-   git clone https://github.com/your-username/email-bomber.git  
-   cd email-bomber  
+   https://github.com/SagarBiswas-MultiHAT/Email-Bomber.git
+   cd Email-Bomber 
    ```  
 2. Install dependencies (if not already installed):  
    ```bash  
